@@ -1,6 +1,5 @@
 package com.example.university_console.console;
 
-
 import com.example.university_console.service.DepartmentService;
 import com.example.university_console.service.LectorService;
 import java.util.List;
