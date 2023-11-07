@@ -14,7 +14,7 @@ University-info is simple Spring Boot java project with the console interface fo
 
 ## Project structure:
 
-- Repository
+- Repository - uses Spring Data JPA to create repository interfaces and automatically generate SQL queries based on repository methods, simplifying interaction with the database.
 - Service - The service layer is responsible for the business logic of the application. It handles data processing,
   executes business rules, and coordinates actions between the DAO and other components of the application.
 - Console -
@@ -23,5 +23,6 @@ University-info is simple Spring Boot java project with the console interface fo
 ## Instructions for launching the project:
 1. Fork this project;
 2. Clone the project from GitHub;
-3. Fill Application properties with the necessary data.
-4. Run the project.
+3. Install the MySQL if you don't have it yet.
+4. Fill Application properties with the necessary data.
+5. Run the project.
