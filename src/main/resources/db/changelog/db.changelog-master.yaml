@@ -5,3 +5,9 @@ databaseChangeLog:
       file: db/changelog/changes/create-departments-table.sql
   - include:
       file: db/changelog/changes/create-lector_department-table.sql
+  - include:
+      file: db/changelog/changes/insert_into_lectors.sql
+  - include:
+      file: db/changelog/changes/insert_into_departments.sql
+  - include:
+      file: db/changelog/changes/insert_into_lector_department.sql

@@ -14,8 +14,7 @@ University-info is simple Spring Boot java project with the console interface fo
 
 ## Project structure:
 
-- DAO (Data Access Object) - DAO is the data access layer responsible for interacting with the database. This layer
-  implements operations related to retrieving, storing, updating, and deleting data.
+- Repository
 - Service - The service layer is responsible for the business logic of the application. It handles data processing,
   executes business rules, and coordinates actions between the DAO and other components of the application.
 - Console -
