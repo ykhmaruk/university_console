@@ -15,7 +15,7 @@ import org.springframework.shell.standard.ShellMethod;
 public class UniversityCommands {
     private static final String START_MESSAGE ="""
                  Hi! This is university-info app!
-                 You can get answear on such commands:
+                 You can get answer on such commands:
                  1. Who is head of department {department_name};
                  2. Show statistics for {department_name} ;
                  3. Show the average salary for the department {department_name};
