@@ -1,6 +1,5 @@
 package com.example.university_console.service.impl;
 
-
 import com.example.university_console.entity.Degree;
 import com.example.university_console.entity.Department;
 import com.example.university_console.entity.Lector;
