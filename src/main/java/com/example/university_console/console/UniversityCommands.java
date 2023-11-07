@@ -13,9 +13,23 @@ import org.springframework.shell.standard.ShellMethod;
 @ShellComponent
 @RequiredArgsConstructor
 public class UniversityCommands {
+    private static final String START_MESSAGE ="""
+                 Hi! This is university-info app!
+                 You can get answear on such commands:
+                 1. Who is head of department {department_name};
+                 2. Show statistics for {department_name} ;
+                 3. Show the average salary for the department {department_name};
+                 4. Show count of employee for {department_name};
+                 5. Global search by {template};
+                 Let`s try it.
+                 """;
     private final DepartmentService departmentService;
     private final LectorService lectorService;
 
+    @ShellMethod(key = "start")
+    public String start() {
+        return START_MESSAGE;
+    }
 
     @ShellMethod(key = "Who is head of department")
     public String getHeadOfDepartment(String departmentName) {
@@ -37,7 +51,8 @@ public class UniversityCommands {
     @ShellMethod(key = "Show count of employee for")
     public String getNumberOfLectors(String departmentName) {
         Long numberOfLectors = departmentService.getNumberOfLectorsInDepartment(departmentName);
-        return "The number of lectors in the %s department is %s".formatted(departmentName, numberOfLectors);
+        return "The number of lectors in the %s department is %s".formatted(departmentName,
+                numberOfLectors);
     }
 
     @ShellMethod(key = "Global search by")
